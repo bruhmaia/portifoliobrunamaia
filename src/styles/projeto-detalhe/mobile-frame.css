@@ -1,0 +1,182 @@
+/* ==========================================================
+   CSS MODULAR PARA PROJETOS MOBILE
+   Frames, vídeos e screenshots em formato de celular
+   ========================================================== */
+
+/* ========== CONTAINER BASE ========== */
+.mobile-project-container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* ==========================================================
+   FRAME MOBILE PADRÃO (COM BORDA PRETA)
+   Para screenshots
+   ========================================================== */
+.mobile-frame {
+    max-width: 300px;
+    border: 12px solid #1a1a1a;
+    border-radius: 30px;
+    padding: 10px;
+    background: #1a1a1a;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-frame .screenshot-image {
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover suave */
+.mobile-frame:hover .screenshot-image {
+    transform: scale(1.02);
+}
+
+.mobile-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Frame SEM BORDA – usado por vídeos quando necessário */
+.mobile-frame.no-border {
+    border: none !important;
+    padding: 0;
+}
+
+/* ==========================================================
+   LIGHTBOX
+   ========================================================== */
+.screenshot-lightbox .mobile-frame {
+    max-width: 80%;
+    border: 8px solid #1a1a1a;
+}
+
+.screenshot-lightbox .mobile-frame.no-border {
+    border: none !important;
+}
+
+/* ==========================================================
+   RESPONSIVE – SCREENSHOTS
+   ========================================================== */
+@media screen and (max-width: 980px) {
+    .mobile-project-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-project-container {
+        max-width: 280px;
+    }
+
+    .mobile-frame {
+        max-width: 280px;
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-project-container {
+        max-width: 260px;
+    }
+
+    .mobile-frame {
+        max-width: 250px;
+        border-width: 8px;
+        padding: 8px;
+    }
+
+    .mobile-frame.no-border {
+        padding: 0;
+    }
+}
+
+/* ==========================================================
+   CONTAINER DE VÍDEO EM FORMATO DE CELULAR
+   ========================================================== */
+.mobile-video-container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Frame do vídeo estilo celular */
+.mobile-video-frame {
+    border: 12px solid #1a1a1a;
+    border-radius: 30px;
+    padding: 10px;
+    background: #1a1a1a;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-video-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Envolucro do vídeo */
+.mobile-video-frame > div {
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* REMOVE TOTALMENTE A BORDA CINZA INTERNA */
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Iframe SEM NENHUMA BORDA */
+.mobile-video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* ==========================================================
+   RESPONSIVE – VÍDEOS
+   ========================================================== */
+@media screen and (max-width: 980px) {
+    .mobile-video-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-video-container {
+        max-width: 280px;
+    }
+
+    .mobile-video-frame {
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-video-container {
+        max-width: 260px;
+    }
+
+    .mobile-video-frame {
+        border-width: 8px;
+        padding: 8px;
+    }
+}
+.mobile-video-frame * {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove somente a borda cinza da hero-visual */
+.vimeo-container.mobile-video-container {
+    border: none !important;
+    box-shadow: none !important;
+}

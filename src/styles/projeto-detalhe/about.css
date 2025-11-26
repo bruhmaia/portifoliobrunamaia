@@ -1,0 +1,216 @@
+/* About Section - Sobre o Projeto */
+.project-about {
+    padding: 80px 0;
+    background-color: var(--color-neutral-0);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.text-block {
+    margin-bottom: 40px;
+}
+
+.text-block h3 {
+    color: var(--color-primary-3);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-neutral-9);
+}
+
+/* Tech Highlights - Layout em Duas Colunas */
+.tech-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: var(--color-primary-1);
+    border-radius: 10px;
+    border-left: 4px solid var(--color-primary-3);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateX(5px);
+    background-color: var(--color-primary-2);
+}
+
+.tech-item i {
+    color: var(--color-primary-3);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tech-item span {
+    font-weight: 600;
+    color: var(--color-neutral-9);
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
+}
+
+/* Container do Vimeo na Seção Sobre */
+.vimeo-about-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-primary-2);
+    transition: all 0.3s ease;
+}
+
+.vimeo-about-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    border-color: var(--color-primary-3);
+}
+
+.vimeo-about-container > div {
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+/* Placeholder antigo (mantido para compatibilidade) */
+.video-placeholder {
+    width: 100%;
+    max-width: 550px;
+    height: 280px;
+    background: linear-gradient(135deg, var(--color-primary-1), var(--color-primary-2));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-3);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-placeholder:hover {
+    transform: translateY(-5px);
+}
+
+.video-placeholder i {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.video-placeholder span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.video-placeholder p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive About */
+@media screen and (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .tech-highlights {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .vimeo-about-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-about {
+        padding: 60px 0;
+    }
+    
+    .video-placeholder {
+        height: 220px;
+    }
+    
+    .video-placeholder i {
+        font-size: 2.5rem;
+    }
+    
+    .tech-highlights {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .tech-item {
+        padding: 12px 15px;
+    }
+    
+    .tech-item i {
+        font-size: 1.1rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.9rem;
+    }
+    
+    .vimeo-about-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 15px 10px;
+    }
+    
+    .tech-item i {
+        width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .tech-highlights {
+        gap: 10px;
+    }
+    
+    .vimeo-about-container {
+        max-width: 100%;
+    }
+}

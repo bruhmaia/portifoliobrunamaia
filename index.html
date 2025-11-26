@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css"/>
+    <link rel="stylesheet" href="src/styles/header.css"/>
+    <link rel="stylesheet" href="src/styles/home.css"/>
+    <link rel="stylesheet" href="src/styles/sobremim.css"/>
+    <link rel="stylesheet" href="src/styles/projetos.css"/>
+    <link rel="stylesheet" href="src/styles/footer.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Portifólio Bruna Maia</title>
+
+</head>
+<body>
+    <header>
+  <nav id="navbar">
+    <i class="fa-solid fa-code" id="nav_logo"> BrunaMaia</i>
+
+    <ul id="nav_list">
+      <li class="nav-item active">
+        <a href="#home">Início</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about">Sobre mim</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects">Projetos</a>
+      </li>
+    </ul>
+
+    <a 
+        href="https://drive.google.com/file/d/1eRHadWmfXilLlxituWZw1iVnB6BeWoQq/view?usp=sharing"
+        class="btn-default"
+        target="_blank">Curriculo
+    </a>
+
+    <button id="mobile_btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+    <main id="content">
+        <section id="home">
+    <div class="shape"></div>
+    
+    
+    <div id="cta">
+        <!-- Seu conteúdo atual permanece aqui -->
+        <h1 class="title">
+            Bruna
+            <span> Maia </span>
+        </h1>
+        <p class="description">
+            Mestranda em Engenharia Química | Desenvolvedora Low-Code e Analista de Dados em formação
+        </p>
+        <h3>Explorando o poder dos dados e da tecnologia para simplificar o mundo</h3>
+        
+        <div id="cta_buttons">
+            <a href="https://drive.google.com/file/d/1eRHadWmfXilLlxituWZw1iVnB6BeWoQq/view?usp=sharing" class="btn-default">Curriculo</a>  
+            <a href="tel:+5591982105221" id="phone_button">
+                <button class="btn-default">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+                (91) 98210-5221
+            </a>
+        </div>
+        
+        <div class="social_media-buttons">
+            <a href="https://wa.me/5591982105221">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bruna-maia-dos-santos/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:bmaiads@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div id="banner">
+        <img src="#" alt="">
+    </div>
+</section>
+
+
+        <section id="about">
+  <div id="about_left">
+    <h2 class="section-title">Sobre Mim</h2>
+    <img src="#" alt="Foto de Bruna Maia" id="about_photo">
+
+    <div id="about_text">
+      <p>
+        Olá! Meu nome é <strong>Bruna Maia dos Santos</strong> e sou uma estudante e pesquisadora apaixonada por
+        soluções sustentáveis e inovação tecnológica. Tenho experiência em Power Apps, Power Automate, Power BI
+        e modelagem de processos de transporte. Busco constantemente aprender novas ferramentas e aprimorar
+        minhas habilidades para criar soluções eficientes e criativas.
+      </p>
+    </div>
+  </div>
+
+  <div id="about_right">
+    <h2 class="section-title">Formação Acadêmica</h2>
+
+    <div class="education-item">
+      <h3>Mestrado em Engenharia Química</h3>
+      <p>Universidade Federal do Pará (UFPA)</p>
+      <span>2025 — atual</span>
+    </div>
+
+    <div class="education-item">
+      <h3>Bacharelado em Engenharia Química</h3>
+      <p>Universidade Federal do Pará (UFPA)</p>
+      <span>2019 — 2025</span>
+    </div>
+  </div>
+</section>
+          
+       <section id="projects"> 
+    <h2 class="section-title">Projetos</h2>
+
+    <div id="projects-container">
+
+        <div class="project-card">
+            <img src="src/imagens/biblioteca/dashboard.png" class="project-image" alt="Imagem do projeto">
+
+            <div class="project-tags">
+                <span>Power Apps</span>
+                <span>SharePoint</span>
+            </div>
+
+            <h3 class="project-title">Biblioteca Pessoal</h3>
+
+            <p class="project-description">
+                Aplicativo para registrar livros lidos, reviews, notas e progresso de leitura.
+            </p>
+
+            <a href="bibliotecapessoal.html" class="btn-default">Veja mais</a>
+        </div>
+
+        <div class="project-card">
+            <img src="src/imagens/treinamentos/boasvindastreinamento.png" class="project-image" alt="Imagem do projeto">
+
+            <div class="project-tags">
+                <span>Power Apps</span>
+                <span>SharePoint</span>
+            </div>
+
+            <h3 class="project-title">Gestão de Treinamentos</h3>
+
+            <p class="project-description">
+                Sistema para registrar presença, emitir certificados e testar seus conhecimentos com quizzes.
+            </p>
+
+            <a href="gestaotreinamentos.html" class="btn-default">Veja mais</a>
+        </div>
+        
+        <div class="project-card">
+            <img src="src/imagens/forca/telainicial.png" class="project-image" alt="Imagem do projeto">
+
+            <div class="project-tags">
+                <span>Power Apps</span>
+                <span>SharePoint</span>
+            </div>
+
+            <h3 class="project-title">Jogo da Forca</h3>
+
+            <p class="project-description">
+                Game com modo manual e automatico, com 3 níveis de dificuldade.
+            </p>
+
+            <a href="forca.html" class="btn-default">Veja mais</a>
+        </div>
+
+        <div class="project-card">
+            <img src="src/imagens/contratos/Ilustrações.png" class="project-image" alt="Imagem do projeto">
+
+            <div class="project-tags">
+                <span>Power Apps</span>
+                <span>SharePoint</span>
+                <span>Power Automate</span>
+            </div>
+
+            <h3 class="project-title">Gestão de Contratos</h3>
+
+            <p class="project-description">
+                Aplicativo para organizar, anexar e acompanhar documentos por Departamento.
+            </p>
+
+            <a href="#" class="btn-default" style="opacity: 0.7; cursor: not-allowed;">Em desenvolvimento</a>
+        </div>
+
+        <div class="project-card">
+            <img src="src/imagens/jogovelha/jogovelha.png" class="project-image" alt="Imagem do projeto">
+
+            <div class="project-tags">
+                <span>Power Apps</span>
+            </div>
+
+            <h3 class="project-title">Jogo da Velha</h3>
+
+            <p class="project-description">
+                Game com modo manual e contra BOT, incluindo níveis de dificuldade.
+            </p>
+
+            <a href="jogovelha.html" class="btn-default">Veja mais</a>
+        </div>
+
+    </div>
+</section>
+
+<script src="src/javascript/script.js"></script>
+
+    </main>
+
+   <footer>
+    <img src="src/imagens/wave.svg" alt="">
+
+    <div id="footer_items">
+        <span id="copyright">
+            &copy 2025 Bruna Maia
+        </span>
+
+        <div class="social_media-buttons">
+            <a href="https://wa.me/5591982105221">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bruna-maia-dos-santos/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:bmaiads@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>

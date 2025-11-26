@@ -1,0 +1,21 @@
+/* Actions Section - Botões e Ações */
+.project-actions {
+    padding: 60px 0;
+    background-color: var(--color-neutral-0);
+    text-align: center;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+/* Responsive Actions */
+@media screen and (max-width: 768px) {
+    .project-actions {
+        padding: 40px 0;
+    }
+}

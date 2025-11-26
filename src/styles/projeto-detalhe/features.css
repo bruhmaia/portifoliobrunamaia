@@ -1,0 +1,103 @@
+/* Features Section - Funcionalidades Principais */
+.project-features {
+    padding: 80px 0;
+    background-color: var(--color-primary-1);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background-color: var(--color-neutral-0);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-primary-4), var(--color-primary-3));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--color-neutral-0);
+    font-size: 2rem;
+}
+
+.feature-card h3 {
+    color: var(--color-primary-3);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: var(--color-neutral-9);
+    line-height: 1.6;
+}
+
+/* Responsive Features */
+@media screen and (max-width: 968px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-features {
+        padding: 60px 0;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Separação entre módulos */
+.features-module {
+    margin-bottom: 60px;
+}
+
+.features-module:last-child {
+    margin-bottom: 0;
+}
+
+.module-title {
+    color: var(--color-primary-3);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.module-description {
+    color: var(--color-neutral-9);
+    margin-bottom: 30px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsive para módulos */
+@media screen and (max-width: 768px) {
+    .features-module {
+        margin-bottom: 40px;
+    }
+}

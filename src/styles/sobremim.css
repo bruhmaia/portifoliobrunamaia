@@ -1,0 +1,105 @@
+#about {
+  min-height: calc(100vh - 91px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  padding: 60px 8%;
+}
+
+#about_left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 24px;
+  /* SEM background, SEM padding, SEM borda, SEM sombra */
+}
+
+#about_photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(108, 74, 182, 0.3);
+  border: 4px solid var(--color-primary-3);
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+#about_photo:hover {
+  transform: scale(1.05);
+}
+
+#about_text {
+  width: 100%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#about_text strong {
+  color: var(--color-primary-3);
+}
+
+#about_right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* SEM background, SEM padding, SEM borda, SEM sombra */
+}
+
+.education-item {
+  background-color: var(--color-neutral-0); /* Mantém apenas os cards da formação */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--color-primary-3);
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--color-primary-3);
+}
+
+.education-item p {
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.education-item span {
+  font-size: 0.9rem;
+  color: var(--color-primary-4);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1170px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about_left,
+  #about_right {
+    width: 100%;
+  }
+
+  #about_photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  #about_text {
+    text-align: center;
+  }
+}

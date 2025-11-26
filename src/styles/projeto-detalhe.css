@@ -1,0 +1,19 @@
+/* Projeto Detalhe Styles - Arquivo Principal */
+#project-detail {
+    padding-top: 0; /* Remove o padding extra */
+    background-color: var(--color-primary-1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Import dos componentes */
+@import url('projeto-detalhe/hero.css');
+@import url('projeto-detalhe/about.css');
+@import url('projeto-detalhe/features.css');
+@import url('projeto-detalhe/screens.css');
+@import url('projeto-detalhe/process.css');
+@import url('projeto-detalhe/actions.css');
