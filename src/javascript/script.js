@@ -18,14 +18,14 @@ $(document).ready(function(){
         const scrollPosition = $(window).scrollTop();
         const headerHeight = header.outerHeight();
 
-        // Efeito de blur e sombra no header - MELHORIA QUE TÍNHAMOS FEITO
+        // Efeito de blur e sombra no header
         if (scrollPosition > 100) {
             header.addClass('scrolled');
         } else {
             header.removeClass('scrolled');
         }
 
-        // Navegação ativa - FUNCIONALIDADE COMPLETA
+        // Navegação ativa
         let activeSectionIndex = 0;
 
         sections.each(function(i) {
@@ -41,9 +41,23 @@ $(document).ready(function(){
 
         navItems.removeClass('active');
         $(navItems[activeSectionIndex]).addClass('active');
+
+        // BOTÃO VOLTAR AO TOPO - CORRIGIDO
+        if (scrollPosition > 300) {
+            $('#back-to-top').removeClass('hidden');
+        } else {
+            $('#back-to-top').addClass('hidden');
+        }
     });
 
-    // Animações com ScrollReveal - TODAS AS ANIMAÇÕES ORIGINAIS
+    // CLICK DO BOTÃO VOLTAR AO TOPO
+    $('#back-to-top').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
+
+    // Animações com ScrollReveal
     ScrollReveal().reveal('#cta', {
         origin: 'left',
         duration: 2000,
@@ -69,66 +83,14 @@ $(document).ready(function(){
         distance: '30px',
         interval: 150
     });
-});
 
-// Efeito de máquina de escrever apenas no slogan
-function typeWriterSlogan() {
-    const sloganElement = document.querySelector('#cta h3');
-    if (!sloganElement) return;
-    
-    const originalText = sloganElement.textContent;
-    
-    let i = 0;
-    sloganElement.textContent = '';
-    
-    function type() {
-        if (i < originalText.length) {
-            sloganElement.textContent += originalText.charAt(i);
-            i++;
-            setTimeout(type, 60); // Velocidade média
-        }
-    }
-    
-    // Iniciar com um pequeno delay
-    setTimeout(type, 2000);
-}
-
-// Chamar quando a página carregar
-$(document).ready(function(){
+    // Efeito de máquina de escrever apenas no slogan
     typeWriterSlogan();
-});
 
-// Controle inteligente da setinha
-function handleScrollIndicator() {
-    const scrollIndicator = $('.scroll-indicator');
-    const scrollPosition = $(window).scrollTop();
-    
-    // Se rolou mais que 100px, esconde a setinha
-    if (scrollPosition > 100) {
-        scrollIndicator.addClass('hidden');
-    } else {
-        scrollIndicator.removeClass('hidden');
-    }
-}
-
-// Clique na setinha para rolar suave
-$('.scroll-indicator').on('click', function() {
-    $('html, body').animate({
-        scrollTop: $('#about').offset().top
-    }, 800);
-});
-
-// Atualizar ao rolar
-$(window).on('scroll', function() {
+    // Controle da setinha
     handleScrollIndicator();
-});
 
-// Chamar quando carregar
-$(document).ready(function(){
-    handleScrollIndicator();
-});
-
-    // FILTROS DE PROJETOS - VERSÃO MELHORADA
+    // FILTROS DE PROJETOS
     $('.filter-btn').on('click', function() {
         const filter = $(this).data('filter');
         
@@ -146,30 +108,48 @@ $(document).ready(function(){
     });
 
     // Clicar numa tag filtra automaticamente
-$('.project-tags span').on('click', function() {
-    const filter = $(this).data('filter');
-    $(`.filter-btn[data-filter="${filter}"]`).click();
+    $('.project-tags span').on('click', function() {
+        const filter = $(this).data('filter');
+        $(`.filter-btn[data-filter="${filter}"]`).click();
+    });
 });
 
-        // VERSÃO ALTERNATIVA - MAIS ROBUSTA
-    $(document).ready(function(){
-        // Botão Voltar ao Topo
-        $('#back-to-top').on('click', function() {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        // Mostrar/ocultar botão
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 300) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        
-        // Esconder botão no carregamento
-        $('#back-to-top').hide();
-    });
+// Efeito de máquina de escrever apenas no slogan
+function typeWriterSlogan() {
+    const sloganElement = document.querySelector('#cta h3');
+    if (!sloganElement) return;
+    
+    const originalText = sloganElement.textContent;
+    
+    let i = 0;
+    sloganElement.textContent = '';
+    
+    function type() {
+        if (i < originalText.length) {
+            sloganElement.textContent += originalText.charAt(i);
+            i++;
+            setTimeout(type, 60);
+        }
+    }
+    
+    setTimeout(type, 2000);
+}
+
+// Controle inteligente da setinha
+function handleScrollIndicator() {
+    const scrollIndicator = $('.scroll-indicator');
+    const scrollPosition = $(window).scrollTop();
+    
+    if (scrollPosition > 100) {
+        scrollIndicator.addClass('hidden');
+    } else {
+        scrollIndicator.removeClass('hidden');
+    }
+}
+
+// Clique na setinha para rolar suave
+$('.scroll-indicator').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $('#about').offset().top
+    }, 800);
+});
