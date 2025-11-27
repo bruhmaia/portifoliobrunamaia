@@ -151,25 +151,25 @@ $('.project-tags span').on('click', function() {
     $(`.filter-btn[data-filter="${filter}"]`).click();
 });
 
-    // BOTÃO VOLTAR AO TOPO - VERSÃO CORRIGIDA
+        // VERSÃO ALTERNATIVA - MAIS ROBUSTA
     $(document).ready(function(){
-        const backToTopButton = $('#back-to-top');
+        // Botão Voltar ao Topo
+        $('#back-to-top').on('click', function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
         
-        // Mostrar/ocultar botão ao rolar
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 300) {
-                backToTopButton.removeClass('hidden');
+        // Mostrar/ocultar botão
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 300) {
+                $('#back-to-top').fadeIn();
             } else {
-                backToTopButton.addClass('hidden');
+                $('#back-to-top').fadeOut();
             }
         });
         
-        // Rolagem suave ao clicar - CORRIGIDO
-        backToTopButton.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, 800, 'swing');
-            return false;
-        });
+        // Esconder botão no carregamento
+        $('#back-to-top').hide();
     });
