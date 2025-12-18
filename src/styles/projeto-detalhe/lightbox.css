@@ -123,3 +123,153 @@
         max-width: 95%;
     }
 }
+
+/* ========================================
+   CSS ADICIONAL PARA LIGHTBOX MELHORADO
+   Adicione ao final do lightbox.css existente
+   ======================================== */
+
+/* ========== LOADING SPINNER ========== */
+.lightbox-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.lightbox-loading i {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* ========== CONTADOR DE IMAGENS ========== */
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+.lightbox-counter .current {
+    color: var(--color-primary-5, #F2C94C);
+}
+
+/* ========== TRANSIÇÃO SUAVE NA IMAGEM ========== */
+.lightbox-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* ========== MELHORIAS NOS BOTÕES ========== */
+
+/* Botões desabilitados (primeira/última imagem) */
+.lightbox-prev:disabled,
+.lightbox-next:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Focus states melhorados (acessibilidade) */
+.lightbox-close:focus,
+.lightbox-prev:focus,
+.lightbox-next:focus {
+    outline: 3px solid var(--color-primary-5, #F2C94C);
+    outline-offset: 3px;
+}
+
+/* Feedback visual ao clicar */
+.lightbox-close:active,
+.lightbox-prev:active,
+.lightbox-next:active {
+    transform: scale(0.95);
+}
+
+.lightbox-prev:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.lightbox-next:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* ========== ANIMAÇÃO DE ABERTURA ========== */
+.screenshot-lightbox {
+    animation: fadeIn 0.2s ease-out;
+}
+
+.screenshot-lightbox.active .lightbox-container {
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ========== RESPONSIVE - MOBILE ========== */
+@media screen and (max-width: 768px) {
+    .lightbox-counter {
+        bottom: 15px;
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+    
+    .lightbox-loading i {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lightbox-counter {
+        bottom: 10px;
+        font-size: 0.8rem;
+    }
+    
+    /* Botões menores no mobile */
+    .lightbox-prev,
+    .lightbox-next {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .lightbox-close {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ========== PREVENÇÃO DE SCROLL NO BODY ========== */
+/* Isso é adicionado via JS, mas garantimos no CSS também */
+body.lightbox-open {
+    overflow: hidden !important;
+}

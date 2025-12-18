@@ -3,7 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jogo da Forca - Sistema completo desenvolvido em Power Apps com múltiplos modos de jogo, IA adaptativa e lógica avançada. Projeto por Bruna Maia.">
+    <meta name="keywords" content="Power Apps, Game Development, Jogo da Forca, Canvas App, Portfolio Bruna Maia, Lógica de Programação">
+    <meta name="author" content="Bruna Maia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brunamaia.com/jogo-forca.html">
+    <meta property="og:title" content="Jogo da Forca - Power Apps | Bruna Maia">
+    <meta property="og:description" content="Sistema completo de jogo desenvolvido exclusivamente no Power Apps com lógica avançada e múltiplos modos de jogo.">
+    <meta property="og:image" content="https://brunamaia.com/src/imagens/forca/telainicial.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brunamaia.com/jogo-forca.html">
+    <meta property="twitter:title" content="Jogo da Forca - Power Apps | Bruna Maia">
+    <meta property="twitter:description" content="Sistema completo de jogo desenvolvido no Power Apps com múltiplos modos">
+    <meta property="twitter:image" content="https://brunamaia.com/src/imagens/forca/telainicial.png">
+    
+    <!-- Preconnect para Performance -->
+    <link rel="preconnect" href="https://player.vimeo.com">
+    <link rel="preconnect" href="https://i.vimeocdn.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="src/imagens/favicon.ico">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/projeto-detalhe.css">
@@ -19,11 +51,12 @@
     <title>Jogo da Forca - Power Apps | Bruna Maia</title>
 </head>
 <body>
-<header>
-  <nav id="navbar">
-    <i class="fa-solid fa-code" id="nav_logo"> BrunaMaia</i>
 
-        <ul id="nav_list">
+<header>
+    <nav id="navbar">
+        <i class="fa-solid fa-code" id="nav_logo" aria-label="Logo Bruna Maia"> BrunaMaia</i>
+
+        <ul id="nav_list" role="navigation">
             <li class="nav-item">
                 <a href="#project-detail">Apresentação</a>
             </li>
@@ -42,398 +75,416 @@
         </ul>
 
         <a href="index.html#projects" class="btn-default back-button">
-            <i class="fa-solid fa-arrow-left"></i>  Voltar para Projetos
+            <i class="fa-solid fa-arrow-left"></i> Voltar para Projetos
         </a>
 
-        <button id="mobile_btn">
+        <button id="mobile_btn" aria-label="Abrir menu de navegação" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
     </nav>
 </header>
 
-    <main id="project-detail">
-        <!-- Hero Section -->
-        <section class="project-hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="project-title">Jogo da Forca</h1>
-                        <p class="project-subtitle">Sistema completo de jogo desenvolvido exclusivamente no Power Apps com lógica avançada e múltiplos modos de jogo</p>
-                        
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <span class="stat-number">4+</span>
-                                <span class="stat-label">Telas Principais</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">2</span>
-                                <span class="stat-label">Modos de Jogo</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">3</span>
-                                <span class="stat-label">Níveis de Dificuldade</span>
-                            </div>
+<main id="project-detail">
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="project-title">Jogo da Forca</h1>
+                    <p class="project-subtitle">Sistema completo de jogo desenvolvido exclusivamente no Power Apps com lógica avançada e múltiplos modos de jogo</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Telas Principais</span>
                         </div>
-                        
-                        <div class="project-tags">
-                            <span>Power Apps</span>
-                            <span>Game Development</span>
-                            <span>UI/UX Design</span>
-                            <span>Lógica de Programação</span>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Modos de Jogo</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Níveis de Dificuldade</span>
                         </div>
                     </div>
-                    <div class="hero-visual">
-    <div class="app-visual">
-        <div class="vimeo-container">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-                <iframe 
-                    src="https://player.vimeo.com/video/1138351394?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="ForcaApresentação ‐ Feito com o Clipchamp">
-                </iframe>
-            </div>
-        </div>
-        
-        <!-- Overlay opcional -->
-        <div class="vimeo-overlay">
-            <div class="play-indicator">
-                <i class="fa-solid fa-play"></i>
-                <span>Clique para assistir</span>
-            </div>
-        </div>
-    </div>
-</div>
+                    
+                    <div class="project-tags">
+                        <span>Power Apps</span>
+                        <span>Game Development</span>
+                        <span>UI/UX Design</span>
+                        <span>Lógica de Programação</span>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sobre o Projeto -->
-        <section class="project-about">
-            <div class="container">
-                <div class="about-header">
-                    <h2 class="section-title">Sobre o Projeto</h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="text-block">
-                            <h3>O Desafio</h3>
-                            <p>Como desenvolver um jogo da forca completo no Power Apps, superando as limitações da plataforma para criar uma experiência de jogo fluida e com lógica complexa?</p>
-                        </div>
-                        <div class="text-block">
-                            <h3>A Solução</h3>
-                            <p>Desenvolvi um sistema de jogo robusto com múltiplos modos, tratamento inteligente de caracteres e mecânicas de game design avançadas, tudo implementado exclusivamente no Power Apps.</p>
+                
+                <div class="hero-visual">
+                    <div class="app-visual">
+                        <div class="vimeo-container">
+                            <div style="padding:56.25% 0 0 0;position:relative;">
+                                <iframe 
+                                    src="https://player.vimeo.com/video/1138351394?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" 
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                    title="Jogo da Forca - Apresentação em Vídeo"
+                                    loading="lazy">
+                                </iframe>
+                            </div>
                         </div>
                         
-                        <div class="tech-highlights">
-                            <div class="tech-item">
-                                <i class="fa-solid fa-gamepad"></i>
-                                <span>Desenvolvido 100% em Power Apps</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fa-solid fa-brain"></i>
-                                <span>Lógica avançada de programação</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fa-solid fa-font"></i>
-                                <span>Sistema case-insensitive e sem acentos</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fa-solid fa-layer-group"></i>
-                                <span>Múltiplas coleções dinâmicas</span>
+                        <!-- Overlay opcional -->
+                        <div class="vimeo-overlay" aria-hidden="true">
+                            <div class="play-indicator">
+                                <i class="fa-solid fa-play"></i>
+                                <span>Clique para assistir</span>
                             </div>
                         </div>
                     </div>
-                    <div class="about-video">
-    <div class="vimeo-about-container">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe 
-                src="https://player.vimeo.com/video/1138348573?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                title="JogoForca ‐ Feito com o Clipchamp">
-            </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Projeto -->
+    <section class="project-about" id="sobre-projeto">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title">Sobre o Projeto</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>O Desafio</h3>
+                        <p>Como desenvolver um jogo da forca completo no Power Apps, superando as limitações da plataforma para criar uma experiência de jogo fluida e com lógica complexa?</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>A Solução</h3>
+                        <p>Desenvolvi um sistema de jogo robusto com múltiplos modos, tratamento inteligente de caracteres e mecânicas de game design avançadas, tudo implementado exclusivamente no Power Apps.</p>
+                    </div>
+                    
+                    <div class="tech-highlights">
+                        <div class="tech-item">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Desenvolvido 100% em Power Apps</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Lógica avançada de programação</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fa-solid fa-font"></i>
+                            <span>Sistema case-insensitive e sem acentos</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Múltiplas coleções dinâmicas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-video">
+                    <div class="vimeo-about-container">
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe 
+                                src="https://player.vimeo.com/video/1138348573?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                title="Jogo da Forca - Demonstração Detalhada"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="project-features" id="funcionalidades">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades Principais</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <h3>Sistema Dual de Modos</h3>
+                    <p>Escolha entre modo manual para palavras personalizadas ou automático com palavras pré-definidas por nível de dificuldade.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Níveis de Dificuldade Progressiva</h3>
+                    <p>Três níveis com palavras de complexidade crescente, organizadas em coleções dinâmicas no Power Apps.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <h3>Teclado Virtual Inteligente</h3>
+                    <p>Sistema que não diferencia maiúsculas/minúsculas e ignora acentos, com feedback visual imediato para cada tentativa.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Mecânica de Chute Estratégico</h3>
+                    <p>Opção de chutar a palavra completa - acertando ganha o jogo, errando perde imediatamente, adicionando profundidade estratégica.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Sistema de Vidas e Feedback Visual</h3>
+                    <p>6 vidas com representação visual da forca que evolui a cada erro, proporcionando feedback claro do progresso do jogo.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Tratamento de Caracteres Especiais</h3>
+                    <p>Lógica avançada para normalização de caracteres, o maior desafio técnico do projeto, resolvido com criatividade no Power Apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telas do Aplicativo -->
+    <section class="app-screens-detailed" id="telas-aplicativo">
+        <div class="container">
+            <h2 class="section-title">Telas do Aplicativo</h2>
+            
+            <div class="screen-showcase">
+                <!-- Tela 1 - Inicial -->
+                <div class="screen-item">
+                    <div class="screen-visual">
+                        <div class="real-screenshot">
+                            <img src="src/imagens/forca/telainicial.png" 
+                                 alt="Tela inicial do Jogo da Forca com seleção entre modo Manual e Automático" 
+                                 class="screenshot-image"
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <div class="screenshot-overlay" aria-hidden="true">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Tela Inicial - Escolha de Modo</h3>
+                        <div class="screen-features">
+                            <div class="feature">
+                                <i class="fa-solid fa-hand-pointer"></i>
+                                <span>Seleção entre modo Manual e Automático</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-palette"></i>
+                                <span>Design limpo e intuitivo</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-play"></i>
+                                <span>Início rápido do jogo</span>
+                            </div>
+                        </div>
+                        <p>Interface inicial que direciona o jogador para sua experiência preferida, com navegação simples e clara.</p>
+                    </div>
+                </div>
+
+                <!-- Tela 2 - Modo Manual -->
+                <div class="screen-item reverse">
+                    <div class="screen-visual">
+                        <div class="real-screenshot">
+                            <img src="src/imagens/forca/manual.png" 
+                                 alt="Modo Manual permitindo inserir palavra personalizada para jogar com amigos" 
+                                 class="screenshot-image"
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <div class="screenshot-overlay" aria-hidden="true">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Modo Manual</h3>
+                        <div class="screen-features">
+                            <div class="feature">
+                                <i class="fa-solid fa-keyboard"></i>
+                                <span>Input personalizado de palavras</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Ideal para jogar com amigos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-shield-alt"></i>
+                                <span>Validação de entrada de dados</span>
+                            </div>
+                        </div>
+                        <p>Permite que os jogadores insiram suas próprias palavras, perfeito para partidas personalizadas e competições entre amigos.</p>
+                    </div>
+                </div>
+
+                <!-- Tela 3 - Modo Automático -->
+                <div class="screen-item">
+                    <div class="screen-visual">
+                        <div class="real-screenshot">
+                            <img src="src/imagens/forca/dificuldade.png" 
+                                 alt="Modo Automático com seleção de três níveis de dificuldade progressiva" 
+                                 class="screenshot-image"
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <div class="screenshot-overlay" aria-hidden="true">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Modo Automático - Seleção de Nível</h3>
+                        <div class="screen-features">
+                            <div class="feature">
+                                <i class="fa-solid fa-chess-pawn"></i>
+                                <span>3 níveis de dificuldade</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-database"></i>
+                                <span>Coleções dinâmicas de palavras</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-random"></i>
+                                <span>Seleção aleatória de palavras</span>
+                            </div>
+                        </div>
+                        <p>Sistema de níveis progressivos onde cada dificuldade possui uma coleção específica de palavras, desde básicas até avançadas.</p>
+                    </div>
+                </div>
+
+                <!-- Tela 4 - Resultado -->
+                <div class="screen-item reverse">
+                    <div class="screen-visual">
+                        <div class="real-screenshot">
+                            <img src="src/imagens/forca/resultado.png" 
+                                 alt="Tela de resultado mostrando vitória ou derrota com opções de continuar jogando" 
+                                 class="screenshot-image"
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <div class="screenshot-overlay" aria-hidden="true">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Tela de Resultado</h3>
+                        <div class="screen-features">
+                            <div class="feature">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span>Feedback de vitória/derrota</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-redo"></i>
+                                <span>Opção para jogar novamente</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-home"></i>
+                                <span>Voltar ao menu principal</span>
+                            </div>
+                        </div>
+                        <p>Tela final que mostra o resultado do jogo com animações visuais e opções para continuar jogando.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo de Desenvolvimento -->
+    <section class="project-process" id="processo-desenvolvimento">
+        <div class="container">
+            <h2 class="section-title">Processo de Desenvolvimento</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Design da Arquitetura do Jogo</h3>
+                        <p>Planejamento da estrutura de modos, fluxo de telas, sistema de coleções e definição das mecânicas de jogo.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Implementação da Lógica Principal</h3>
+                        <p>Desenvolvimento do núcleo do jogo: sistema de tentativas, contagem de vidas, verificação de vitória/derrota.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Sistema de Validação de Caracteres</h3>
+                        <p>Implementação do desafio técnico mais complexo: normalização de maiúsculas/minúsculas e tratamento de acentos.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Polimento e Testes de Usabilidade</h3>
+                        <p>Refinamento da interface, ajustes na experiência do usuário e testes extensivos em todos os modos de jogo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Voltar -->
+    <section class="project-actions">
+        <div class="container">
+            <a href="index.html#projects" class="btn-default back-button">
+                <i class="fa-solid fa-arrow-left"></i> Voltar para Projetos
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <img src="src/imagens/wave.svg" alt="">
+    <div id="footer_items">
+        <span id="copyright">
+            &copy; 2025 Bruna Maia
+        </span>
+        <div class="social_media-buttons">
+            <a href="https://wa.me/5591982105221" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bruna-maia-dos-santos/" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:bmaiads@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
         </div>
     </div>
-</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+</footer>
 
-        <!-- Funcionalidades -->
-        <section class="project-features">
-            <div class="container">
-                <h2 class="section-title">Funcionalidades Principais</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-route"></i>
-                        </div>
-                        <h3>Sistema Dual de Modos</h3>
-                        <p>Escolha entre modo manual para palavras personalizadas ou automático com palavras pré-definidas por nível de dificuldade.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <h3>Níveis de Dificuldade Progressiva</h3>
-                        <p>Três níveis com palavras de complexidade crescente, organizadas em coleções dinâmicas no Power Apps.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-keyboard"></i>
-                        </div>
-                        <h3>Teclado Virtual Inteligente</h3>
-                        <p>Sistema que não diferencia maiúsculas/minúsculas e ignora acentos, com feedback visual imediato para cada tentativa.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-bolt"></i>
-                        </div>
-                        <h3>Mecânica de Chute Estratégico</h3>
-                        <p>Opção de chutar a palavra completa - acertando ganha o jogo, errando perde imediatamente, adicionando profundidade estratégica.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <h3>Sistema de Vidas e Feedback Visual</h3>
-                        <p>6 vidas com representação visual da forca que evolui a cada erro, proporcionando feedback claro do progresso do jogo.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3>Tratamento de Caracteres Especiais</h3>
-                        <p>Lógica avançada para normalização de caracteres, o maior desafio técnico do projeto, resolvido com criatividade no Power Apps.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Botão Voltar ao Topo -->
+<button id="back-to-top" class="hidden" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
-       <!-- Telas do Aplicativo -->
-<section class="app-screens-detailed">
-    <div class="container">
-        <h2 class="section-title">Telas do Aplicativo</h2>
-        
-        <div class="screen-showcase">
-            <!-- Tela 1 - Inicial -->
-            <div class="screen-item">
-                <div class="screen-visual">
-                    <div class="real-screenshot">
-                        <img src="src/imagens/forca/telainicial.png" alt="Tela Inicial do Jogo da Forca - Escolha de Modo" class="screenshot-image">
-                        <div class="screenshot-overlay">
-                            <i class="fa-solid fa-expand"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen-info">
-                    <h3>Tela Inicial - Escolha de Modo</h3>
-                    <div class="screen-features">
-                        <div class="feature">
-                            <i class="fa-solid fa-hand-pointer"></i>
-                            <span>Seleção entre modo Manual e Automático</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-palette"></i>
-                            <span>Design limpo e intuitivo</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-play"></i>
-                            <span>Início rápido do jogo</span>
-                        </div>
-                    </div>
-                    <p>Interface inicial que direciona o jogador para sua experiência preferida, com navegação simples e clara.</p>
-                    
-                    <!-- CRÉDITOS (apague se não for usar) -->
-                    <div class="creditos">
-                        <p><small>Background art por: Nome do Artista</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tela 2 - Modo Manual -->
-            <div class="screen-item reverse">
-                <div class="screen-visual">
-                    <div class="real-screenshot">
-                        <img src="src/imagens/forca/manual.png" alt="Modo Manual - Input de Palavra Personalizada" class="screenshot-image">
-                        <div class="screenshot-overlay">
-                            <i class="fa-solid fa-expand"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen-info">
-                    <h3>Modo Manual</h3>
-                    <div class="screen-features">
-                        <div class="feature">
-                            <i class="fa-solid fa-keyboard"></i>
-                            <span>Input personalizado de palavras</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-users"></i>
-                            <span>Ideal para jogar com amigos</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-shield-alt"></i>
-                            <span>Validação de entrada de dados</span>
-                        </div>
-                    </div>
-                    <p>Permite que os jogadores insiram suas próprias palavras, perfeito para partidas personalizadas e competições entre amigos.</p>
-                </div>
-            </div>
-
-            <!-- Tela 3 - Modo Automático -->
-            <div class="screen-item">
-                <div class="screen-visual">
-                    <div class="real-screenshot">
-                        <img src="src/imagens/forca/dificuldade.png" alt="Modo Automático - Seleção de Nível de Dificuldade" class="screenshot-image">
-                        <div class="screenshot-overlay">
-                            <i class="fa-solid fa-expand"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen-info">
-                    <h3>Modo Automático - Seleção de Nível</h3>
-                    <div class="screen-features">
-                        <div class="feature">
-                            <i class="fa-solid fa-chess-pawn"></i>
-                            <span>3 níveis de dificuldade</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-database"></i>
-                            <span>Coleções dinâmicas de palavras</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-random"></i>
-                            <span>Seleção aleatória de palavras</span>
-                        </div>
-                    </div>
-                    <p>Sistema de níveis progressivos onde cada dificuldade possui uma coleção específica de palavras, desde básicas até avançadas.</p>
-                </div>
-            </div>
-
-            <!-- Tela 4 - Resultado -->
-            <div class="screen-item reverse">
-                <div class="screen-visual">
-                    <div class="real-screenshot">
-                        <img src="src/imagens/forca/resultado.png" alt="Tela de Resultado - Vitória ou Derrota" class="screenshot-image">
-                        <div class="screenshot-overlay">
-                            <i class="fa-solid fa-expand"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen-info">
-                    <h3>Tela de Resultado</h3>
-                    <div class="screen-features">
-                        <div class="feature">
-                            <i class="fa-solid fa-trophy"></i>
-                            <span>Feedback de vitória/derrota</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-redo"></i>
-                            <span>Opção para jogar novamente</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fa-solid fa-home"></i>
-                            <span>Voltar ao menu principal</span>
-                        </div>
-                    </div>
-                    <p>Tela final que mostra o resultado do jogo com animações visuais e opções para continuar jogando.</p>
-                    
-                    <!-- CRÉDITOS (apague se não for usar) -->
-                    <div class="creditos">
-                        <p><small>Ilustração de resultado por: Nome do Artista</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- Processo de Desenvolvimento -->
-        <section class="project-process">
-            <div class="container">
-                <h2 class="section-title">Processo de Desenvolvimento</h2>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Design da Arquitetura do Jogo</h3>
-                            <p>Planejamento da estrutura de modos, fluxo de telas, sistema de coleções e definição das mecânicas de jogo.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Implementação da Lógica Principal</h3>
-                            <p>Desenvolvimento do núcleo do jogo: sistema de tentativas, contagem de vidas, verificação de vitória/derrota.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Sistema de Validação de Caracteres</h3>
-                            <p>Implementação do desafio técnico mais complexo: normalização de maiúsculas/minúsculas e tratamento de acentos.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Polimento e Testes de Usabilidade</h3>
-                            <p>Refinamento da interface, ajustes na experiência do usuário e testes extensivos em todos os modos de jogo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Botão Voltar -->
-        <section class="project-actions">
-            <div class="container">
-                <a href="index.html#projects" class="btn-default back-button">
-                    <i class="fa-solid fa-arrow-left"></i> Voltar para Projetos
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <img src="src/imagens/wave.svg" alt="">
-        <div id="footer_items">
-            <span id="copyright">
-                &copy 2025 Bruna Maia
-            </span>
-            <div class="social_media-buttons">
-                <a href="https://wa.me/5591982105221">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/bruna-maia-dos-santos/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="mailto:bmaiads@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="src/javascript/script.js"></script>
-    <script src="src/javascript/projeto-script.js"></script>
-    <script src="src/javascript/lightbox.js"></script>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+<script src="https://unpkg.com/scrollreveal" defer></script>
+<script src="src/javascript/script.js"></script>
+<script src="src/javascript/projeto-script.js"></script>
+<script src="src/javascript/lightbox.js"></script>
 </body>
 </html>

@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/about.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/actions.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/features.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/hero.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/process.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/screens.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/lightbox.css">
+    <link rel="stylesheet" href="src/styles/projeto-detalhe/automate.css"> <!-- NOVO! -->
+    <link rel="stylesheet" href="src/styles/footer.css">
+
+    <title>Sistema de Gestão de Contratos | Bruna Maia</title>
+</head>
+<body>
+<header>
+  <nav id="navbar">
+    <i class="fa-solid fa-code" id="nav_logo"> BrunaMaia</i>
+
+        <ul id="nav_list">
+            <li class="nav-item">
+                <a href="#project-detail">Apresentação</a>
+            </li>
+            <li class="nav-item">
+                <a href="#sobre-projeto">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#funcionalidades">Funcionalidades</a>
+            </li>
+            <li class="nav-item">
+                <a href="#automacao">Automação</a>
+            </li>
+            <li class="nav-item">
+                <a href="#telas-aplicativo">Telas</a>
+            </li>
+            <li class="nav-item">
+                <a href="#processo-desenvolvimento">Processo</a>
+            </li>
+        </ul>
+
+        <a href="index.html#projects" class="btn-default back-button">
+            <i class="fa-solid fa-arrow-left"></i>  Voltar para Projetos
+        </a>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+    <main id="project-detail">
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="project-title">Sistema de Gestão de Contratos</h1>
+                        <p class="project-subtitle">Plataforma desenvolvida em Power Apps para gestão inteligente de contratos públicos com dados da Prefeitura de Belém</p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Telas Principais</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Funcionalidades</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Fluxo Automatizado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span>Power Apps</span>
+                            <span>SharePoint</span>
+                            <span>Power Automate</span>
+                            <span>Gestão Pública</span>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="app-visual">
+                            <!-- Placeholder para futuro vídeo -->
+                            <div class="video-placeholder">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <span>Sistema de Gestão de Contratos</span>
+                                <p>Dashboard com dados da Prefeitura de Belém</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre o Projeto -->
+        <section id="sobre-projeto" class="project-about">
+            <div class="container">
+                <div class="about-header">
+                    <h2 class="section-title">Sobre o Projeto</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="text-block">
+                            <h3>O Desafio</h3>
+                            <p>Como otimizar a gestão de contratos públicos utilizando dados reais da Prefeitura de Belém disponíveis no Portal da Transparência?</p>
+                        </div>
+                        <div class="text-block">
+                            <h3>A Solução</h3>
+                            <p>Desenvolvi um sistema completo no Power Apps integrado com Power Automate, utilizando dados públicos para criar uma plataforma inteligente de gestão de contratos com automação de processos.</p>
+                        </div>
+                        
+                        <div class="tech-highlights">
+                            <div class="tech-item">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Desenvolvido em Power Apps Canvas</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fa-solid fa-database"></i>
+                                <span>Dados públicos da Prefeitura de Belém</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fa-solid fa-shield-alt"></i>
+                                <span>Validações de CNPJ/CPF e Email</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fa-solid fa-robot"></i>
+                                <span>Power Automate integrado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-video">
+                        <!-- Placeholder para vídeo sobre -->
+                        <div class="video-placeholder">
+                            <i class="fa-solid fa-play-circle"></i>
+                            <span>Demonstração do Sistema</span>
+                            <p>Fluxo completo de gestão com dados públicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades - 6 CARDS PERFEITOS -->
+        <section id="funcionalidades" class="project-features">
+            <div class="container">
+                <h2 class="section-title">Funcionalidades Principais</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Dashboard Inteligente</h3>
+                        <p>Página inicial com 4 indicadores em tempo real: total de contratos, vencimentos próximos, adições do mês e valor total.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3>Gestão por Departamento</h3>
+                        <p>Cadastro e filtragem de contratos por setor municipal, com visualização específica para cada departamento.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Cadastro com Validação</h3>
+                        <p>Sistema de registro com validação automática de CNPJ/CPF e Email para garantir qualidade dos dados.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                        <h3>Filtros Avançados</h3>
+                        <p>Busca inteligente por departamento, tipo de contrato, parceiro e prazo de vencimento.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <h3>Gestão Documental</h3>
+                        <p>Visualização de contratos em PDF, download e envio por email diretamente da plataforma.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-calendar-alt"></i>
+                        </div>
+                        <h3>Controle de Prazos</h3>
+                        <p>Calendário integrado e lista de contratos próximos ao vencimento para acompanhamento proativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Power Automate -->
+        <section id="automacao" class="project-automate">
+            <div class="container">
+                <h2 class="section-title">Automação com Power Automate</h2>
+                <div class="automate-content">
+                    <div class="automate-info">
+                        <h3>Fluxo de Notificação Automática</h3>
+                        <p>Desenvolvi um fluxo automatizado no Power Automate que monitora diariamente os contratos no SharePoint e envia alertas por email 30 dias antes do vencimento.</p>
+                        
+                        <div class="automate-steps">
+                            <div class="automate-step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="step-text">
+                                    <h4>Monitoramento Diário</h4>
+                                    <p>O fluxo verifica automaticamente todos os contratos cadastrados no SharePoint</p>
+                                </div>
+                            </div>
+                            
+                            <div class="automate-step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+                                <div class="step-text">
+                                    <h4>Cálculo de Prazos</h4>
+                                    <p>Identifica contratos com exatamente 30 dias restantes até o vencimento</p>
+                                </div>
+                            </div>
+                            
+                            <div class="automate-step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="step-text">
+                                    <h4>Notificação Automática</h4>
+                                    <p>Envia email personalizado ao responsável pelo contrato com todos os detalhes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="automate-visual">
+                        <div class="real-screenshot">
+                            <img src="src/imagens/contratos/fluxo-power-automate.png" alt="Fluxo Power Automate - Alertas de Vencimento" class="screenshot-image">
+                            <div class="screenshot-overlay">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Telas do Aplicativo -->
+        <section id="telas-aplicativo" class="app-screens-detailed">
+            <div class="container">
+                <h2 class="section-title">Telas do Aplicativo</h2>
+                
+                <div class="screen-showcase">
+                    <!-- Tela 1 - Dashboard -->
+                    <div class="screen-item">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/dashboard-contratos.png" alt="Dashboard com Indicadores" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Dashboard Principal</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <span>4 indicadores em tempo real</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Alertas de vencimento</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span>Calendário integrado</span>
+                                </div>
+                            </div>
+                            <p>Visão geral do sistema utilizando dados públicos da Prefeitura de Belém, com métricas estratégicas para tomada de decisão.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tela 2 - Cadastro Departamentos -->
+                    <div class="screen-item reverse">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/cadastro-departamentos.png" alt="Cadastro de Departamentos" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Gestão de Departamentos</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-list"></i>
+                                    <span>Lista de setores municipais</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-search"></i>
+                                    <span>Busca integrada</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span>Cadastro de novos</span>
+                                </div>
+                            </div>
+                            <p>Interface para gerenciamento dos departamentos da administração pública com acesso rápido aos contratos por setor.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tela 3 - Cadastro Parceiros -->
+                    <div class="screen-item">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/cadastro-parceiros.png" alt="Cadastro de Parceiros" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Cadastro de Parceiros</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-id-card"></i>
+                                    <span>Validação de CNPJ/CPF</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>Validação de Email</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span>Qualidade dos dados</span>
+                                </div>
+                            </div>
+                            <p>Sistema com validações automáticas para garantir a integridade das informações dos parceiros contratados pela administração.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tela 4 - Lista Contratos -->
+                    <div class="screen-item reverse">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/lista-contratos.png" alt="Lista de Contratos" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Lista de Contratos</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-filter"></i>
+                                    <span>Filtros avançados</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-sort"></i>
+                                    <span>Ordenação múltipla</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                    <span>Acesso aos detalhes</span>
+                                </div>
+                            </div>
+                            <p>Visualização completa de contratos públicos com sistema de filtragem baseado em dados reais do Portal da Transparência.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tela 5 - Departamento Detalhado -->
+                    <div class="screen-item">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/departamento-detalhe.png" alt="Vista por Departamento" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Vista por Departamento</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-th"></i>
+                                    <span>Visualização Grid/Board</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                    <span>Preview do documento</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span>Transição para detalhes</span>
+                                </div>
+                            </div>
+                            <p>Interface especializada para análise detalhada de contratos por setor específico da administração municipal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tela 6 - Cadastro de Contratos -->
+                    <div class="screen-item reverse">
+                        <div class="screen-visual">
+                            <div class="real-screenshot">
+                                <img src="src/imagens/contratos/cadastro-contratos.png" alt="Cadastro de Contratos" class="screenshot-image">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-info">
+                            <h3>Cadastro de Contratos</h3>
+                            <div class="screen-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span>Referência aos cadastros</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar-alt"></i>
+                                    <span>Controle de prazos</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fa-solid fa-file-upload"></i>
+                                    <span>Anexo de documentos</span>
+                                </div>
+                            </div>
+                            <p>Formulário completo para registro de novos contratos públicos com todas as informações necessárias e referências cruzadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processo de Desenvolvimento -->
+        <section id="processo-desenvolvimento" class="project-process">
+            <div class="container">
+                <h2 class="section-title">Processo de Desenvolvimento</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Análise de Dados Públicos</h3>
+                            <p>Estudo dos contratos disponíveis no Portal da Transparência da Prefeitura de Belém para definição da estrutura do sistema.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Design da Arquitetura</h3>
+                            <p>Estruturação das entidades no SharePoint e definição das validações necessárias para CNPJ/CPF e Email.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Desenvolvimento no Power Apps</h3>
+                            <p>Implementação das telas principais, sistema de filtros e validações de dados na plataforma Power Apps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Automação com Power Automate</h3>
+                            <p>Criação do fluxo automatizado para alertas de vencimento e integração completa do ecossistema Power Platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão Voltar -->
+        <section class="project-actions">
+            <div class="container">
+                <a href="index.html#projects" class="btn-default back-button">
+                    <i class="fa-solid fa-arrow-left"></i> Voltar para Projetos
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/imagens/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Bruna Maia
+            </span>
+            <div class="social_media-buttons">
+                <a href="https://wa.me/5591982105221">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bruna-maia-dos-santos/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:bmaiads@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/javascript/script.js"></script>
+    <script src="src/javascript/projeto-script.js"></script>
+    <script src="src/javascript/lightbox.js"></script>
+</body>
+</html>
